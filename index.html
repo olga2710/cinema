@@ -15,8 +15,9 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header class="header container">
-        <a href="/"><img src="img/logo.svg" alt="logo"></a>
+    <header class="header">
+        <div class="navbar  container">
+            <a href="/"><img src="img/logo.svg" alt="logo"></a>
 
         <nav class="header__nav">
             <ul class="nav__menu">
@@ -34,6 +35,106 @@
             <img class="user__avatar" src="img/avatar.png" alt="avatar">
         </div>
         <!-- /.header__user -->
+        </div>
+        <!-- /.navbar -->
+
+        <div class="main container">
+            <div class="film">
+                <h3 class="film__en-name">
+                    Avengers: Infinity War
+                </h3>
+                <h1 class="film__title">
+                    Мстители: война бесконечности
+                </h1>
+                <p class="film__discription">
+                    Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.  
+                </p>
+                </div>
+                <!-- /.film -->
+                <a class="film-trailer" href="#">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50" fill="white"/>
+                        <g clip-path="url(#clip0)">
+                        <path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+
+                </a>
+                <!-- /.film-trailer -->
+            </div>
+            <!-- /.main -->
+            
+        <!-- /.main -->
+        <div class="film-detalies container">
+            <div class="film-detalies__time">
+                <img src="/img/icons/clock.svg" alt="icon: time">
+                <span class="time__span">240 мин.</span>
+            </div>
+            <div class="film-detalies__raiting">
+                <img src="/img/icons/imdb.png" alt="imbd">
+                <span class="raiting__span raiting__span_big">9.2</span>
+                <span class="raiting__span">/10</span>
+            </div>
+        </div>
+
+        <div class="session container">
+            <div class="session__date">
+                <span class="session__label">Дата</span>
+                <div class="session__date__block">
+                    <div class="session__date-item ">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">27</span>
+                        <span class="session__week">пт</span>
+                    </div>
+                    <div class="session__date-item session__date-item_active">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">28</span>
+                        <span class="session__week">сб</span>
+                    </div>
+                    <div class="session__date-item">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">29</span>
+                        <span class="session__week">вс</span>
+                    </div>
+                    <div class="session__date-item">
+                        <span class="session__month">АПР</span>
+                        <span class="session__day">30</span>
+                        <span class="session__week">пн</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /.session__date -->
+            <div class="session__cinema">
+                <span class="session__label">Кинотеатр</span>
+                <select class ="select cinema__select" name="cinema">
+                   <option value="Октябрь, ул. Калужская 28">Октябрь, ул. Калужская 28</option> 
+                   <option value="Январь, ул. Ленина 12">Январь, ул. Ленина 12</option> 
+                   <option value="Космик, ул. Октябрьская 1">Космик, ул. Октябрьская 1</option> 
+                </select>
+            </div>
+            <!-- /.session__cinema -->
+            <div class="session__time">
+                <span class="session__label">Время</span>
+                <select class ="select time__select " name="time">
+                    <option value="23:00">23:00</option> 
+                    <option value="10:00">10:00</option> 
+                    <option value="12:00">12:00</option> 
+                    <option value="13:00">13:00</option> 
+                    <option value="16:00">16:00</option> 
+                    <option value="18:00">18:00</option> 
+                 </select>
+            </div>
+            <!-- /.session__time -->
+
+        </div>
+        <!-- /.session -->
+    
     </header>
     <!-- /.header -->
     

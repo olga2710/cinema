@@ -1,17 +1,22 @@
 $white : #FFFFFF
-
+*
+    box-sizing: border-box
 body
     background-color: #621402
     font-family: 'Roboto', sans-serif
+    color: $white
+
 
 .container
     max-width: 1170px
     margin: auto
-.header
+.navbar
     display: flex
     align-items: center
     padding: 30px 0
-
+.header
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.jpg") no-repeat center top / cover
+    min-height: 100vh
 .nav__menu
     list-style: none
     padding: 0
@@ -23,6 +28,8 @@ body
 .menu__link
     text-decoration: none
     color: $white
+    :hover
+        cursor: pointer
 .header__user
     margin-left: auto
     color: $white
@@ -33,3 +40,136 @@ body
     height: 33px
     border-radius: 50%
     margin-left: 11px
+.main 
+    display: flex
+    align-items: center
+    margin-top: 60px
+.film
+    width: 50%
+.film__en-name
+    font-size: 24px
+    line-height: 150%
+    opacity: 0.5
+    font-weight: 400
+    margin: 0
+    padding: 0
+.film__title
+    font-weight: 700
+    font-size: 36px
+    line-height: 42px
+    padding: 0
+    margin: 11px 0 23px 0
+.film__discription
+    font-size: 16px
+    line-height: 150%
+    max-width: 560px
+    font-weight: 400
+.film-trailer
+    margin: auto
+.film-detalies
+    display: flex
+    align-items: center
+    margin-top: 50px
+.film-detalies__time
+    display: flex
+    align-items: center
+.time__span
+    margin-left: 15px
+    font-size: 16px
+    line-height: 150%
+    font-weight: 400
+.film-detalies__raiting
+    margin-left: 34px
+    display: flex
+    align-items: center
+.raiting__span 
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+.raiting__span_big
+    margin-left: 12px
+    font-weight: 700
+    font-size: 24px
+    line-height: 150%
+
+.session
+    margin-top: 62px
+    padding: 46px 0 63px 0
+    border-top: 1px solid rgba(255, 255, 255, 0.5)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+
+.session
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+.session__label
+    margin-bottom: 20px
+    display: block
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+.session__date
+    margin-right: 6.83%
+    width: 35.47%
+.session__date__block
+    display: flex
+.session__date-item
+    cursor: pointer
+    display: flex
+    flex-direction: column
+    border: 1px solid rgba(255, 255, 255, 0.5)
+    border-radius: 5px
+    text-align: center
+    width: 90px
+    height: 90px
+    align-items: center
+    justify-content: center
+    margin-right: 15px
+.session__date-item:hover
+    background: #FE8E05
+    border: 1px solid rgba(255, 255, 255, 0.5)
+    border-radius: 5px
+    transition: background-color 0.5s
+    color: #621402  
+
+.session__month
+    font-size: 16px
+    line-height: 19px
+    font-weight: 400
+.session__day
+    font-weight: 900
+    font-size: 30px
+    line-height: 35px
+.session__week
+    font-weight: 400
+    font-size: 19px
+    line-height: 22px
+
+.session__date-item_active
+    background: #FE8E05
+    border: 1px solid rgba(255, 255, 255, 0.5)
+    border-radius: 5px
+    span
+         color: #621402   
+.session__cinema
+    max-width: 470px
+    width: 41.6%
+.select
+    margin-top: 13px
+    width: 100%
+    background: rgba(255, 255, 255, 0.15) 
+    border-radius: 5px
+    padding: 18px 
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    color: $white
+    option
+        background-color: rgba(255, 255, 255, 0.15) !important
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+        color: $white
+.session__time
+    width: 9.23%
+    max-width: 108px

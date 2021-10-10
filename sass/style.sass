@@ -173,3 +173,71 @@ body
 .session__time
     width: 9.23%
     max-width: 108px
+.scheme
+    background: rgba(36, 36, 36, 0.18)
+    border-radius: 10px
+    margin-top: 63px
+    margin-bottom: 40px
+    path:not(.light)
+        fill: $white
+        opacity: 0.2
+        cursor: pointer
+    path:not(.light):hover
+        opacity: 0.5
+    path.booked
+        opacity: 0.05
+        cursor: not-allowed
+    path.booked:hover
+        opacity: 0.05
+    path.active
+        fill: #FE8E05
+        opacity: 1
+        cursor: pointer
+    path.active:hover
+        opacity: 1
+
+.legend
+    padding-top: 20px
+    max-width: 1024px
+    margin: auto
+    padding-bottom: 40px
+    display: flex
+    align-items: center
+    border-top: 1px solid rgba(255, 255, 255, 0.5)
+.legend .legend-free svg path.icon-free
+    cursor: not-allowed !important
+.icon-free:hover
+    opacity:0.2 !important
+   
+.legend-lebel
+    display: flex
+    align-items: center
+    margin-right: 30px
+    color: rgba(255, 255, 255, 0.5)
+.legend svg
+    margin-right: 15px
+.legend__text-changed
+    color: #FE8E05 !important
+    opacity: 1 !important
+.price
+    padding-top: 20px
+    padding-bottom: 40px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .price-lebel
+        font-size: 18px
+        line-height: 21px
+.price-counter span
+    font-size: 52px
+    line-height: 61px
+.button
+    padding: 24px 52px
+    background: #FE8E05
+    border-radius: 5px
+    text-decoration: none
+    font-weight: 700
+    font-size: 18px
+    line-height: 21px
+    color: $white
+

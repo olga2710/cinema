@@ -16,7 +16,7 @@ body
     padding: 30px 0
 .header
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.jpg") no-repeat center top / cover
-    min-height: 100vh
+    padding-bottom: 60px
 .nav__menu
     list-style: none
     padding: 0
@@ -45,7 +45,7 @@ body
     align-items: center
     margin-top: 60px
 .film
-    width: 50%
+    max-width: 570px
 .film__en-name
     font-size: 24px
     line-height: 150%
@@ -102,6 +102,7 @@ body
     display: flex
     justify-content: space-between
     align-items: flex-start
+    flex-wrap: wrap
 .session__label
     margin-bottom: 20px
     display: block
@@ -109,7 +110,6 @@ body
     font-size: 16px
     line-height: 19px
 .session__date
-    margin-right: 6.83%
     width: 35.47%
 .session__date__block
     display: flex
@@ -151,12 +151,10 @@ body
     border-radius: 5px
     span
          color: #621402   
-.session__cinema
-    max-width: 470px
-    width: 41.6%
+
+    
 .select
     margin-top: 13px
-    width: 100%
     background: rgba(255, 255, 255, 0.15) 
     border-radius: 5px
     padding: 18px 
@@ -170,14 +168,15 @@ body
         font-size: 16px
         line-height: 150%
         color: $white
+.cinema__select
+     width: 470px
 .session__time
-    width: 9.23%
     max-width: 108px
 .scheme
     background: rgba(36, 36, 36, 0.18)
     border-radius: 10px
     margin-top: 63px
-    margin-bottom: 40px
+    
     path:not(.light)
         fill: $white
         opacity: 0.2
@@ -195,10 +194,13 @@ body
         cursor: pointer
     path.active:hover
         opacity: 1
-
+.scheme-svg
+    max-width: 1170px
+    
 .legend
     padding-top: 20px
     max-width: 1024px
+    width: 90%
     margin: auto
     padding-bottom: 40px
     display: flex
@@ -240,4 +242,107 @@ body
     font-size: 18px
     line-height: 21px
     color: $white
+.m-menu
+    display: none
+    background-color: transparent
+    border: none
+    width: 50px
+    height: 50px
+    cursor: pointer
+    margin-left: 20px
+    svg
+        fill: $white
+.m-menu:hover svg
+    fill: grey 
+.is-open
+    opacity: 1 !important
+    visibility: visible !important
+    transform: translateY(0) !important
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .cinema-select
+        width: 100%
 
+@media (max-width: 995px)
+    .container
+        max-width: 750px
+    .cinema-select
+        width: 100%
+    .session__date
+        flex-basis: 70%
+        margin-bottom: 40px
+    .session__cinema
+        order: 3
+    .menu__item
+        margin-right: 20px
+@media (max-width: 780px)
+    .container
+        max-width: 560px
+    .header__nav
+        position: relative
+    .nav__menu
+        position: absolute
+        left: 30px
+        top: 40px
+        display: flex
+        flex-direction: column
+        margin-left: 0
+        padding: 20px
+        background-color: #621402
+        z-index: 3
+        border-radius: 10px
+        opacity: 0
+        visibility: hidden
+        transform: translateY(50%)
+        transition: opacity 0.5s, transform 0.5s
+    .m-menu
+        display: block
+    .menu__item:not(:last-child)
+        margin-bottom: 10px
+    .menu__item
+        font-size: 18px
+    .film
+        margin-right: 30px
+    .main
+        flex-direction: column
+    .film-trailer
+        margin-right: auto
+        margin-left: 0
+        margin-top: 20px
+
+@media (max-width:680px)
+    .container
+        max-width: 90%
+    .session__date
+        flex-basis: 100%
+    .session__cinema
+        margin-top: 40px
+    .scheme
+        width: 90%
+        margin: auto
+        width: 750px
+        overflow-x: auto
+    .scheme-svg
+        width: 700px
+
+@media (max-width:500px)
+    .session__date__block
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+    .session__date-item
+        margin-right: 10px
+        min-width: 140px
+        margin-bottom: 10px
+    
+    .cinema__select
+        width: 100%
+    .session__cinema
+        flex-basis: 100%
+    .price 
+        flex-wrap: wrap
+    .price-counter span
+        font-size: 32px
+    .button
+        padding: 24px 36px

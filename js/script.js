@@ -1,6 +1,8 @@
 const dateItems = document.querySelectorAll('.session__date-item');
 const schemeSvg = document.querySelector('.scheme-svg');
 const spanCounter = document.querySelector('.span-counter');
+const burgerMenu = document.querySelector('.m-menu');
+const mobileMenu = document.querySelector('.nav__menu');
 let cost = 800;
 let totalCost=0;
 
@@ -26,3 +28,8 @@ schemeSvg.addEventListener('click', (ev)=>{
     }
     
 });
+
+burgerMenu.addEventListener('click', ()=>{
+    mobileMenu.classList.toggle('is-open');
+
+})

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
     <script src="js/script.js" defer></script>
 </head>
@@ -28,6 +29,15 @@
                 <li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
             </ul>
             <!-- /.nav__menu -->
+            <button class="m-menu">
+                <svg width="16" height="11" viewBox="0 0 16 11"  xmlns="http://www.w3.org/2000/svg">
+                    <line y1="5.5" x2="16" y2="5.5" stroke="white"/>
+                    <line y1="10.5" x2="16" y2="10.5" stroke="white"/>
+                    <line y1="0.5" x2="16" y2="0.5" stroke="white"/>
+                    </svg>
+                       
+            </button>
+            <!-- /.m-menu -->
         </nav>
         <!-- /.header__nav -->
         <div class="header__user">
@@ -49,9 +59,20 @@
                 <p class="film__discription">
                     Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.  
                 </p>
+                <div class="film-detalies">
+                    <div class="film-detalies__time">
+                        <img src="/img/icons/clock.svg" alt="icon: time">
+                        <span class="time__span">240 мин.</span>
+                    </div>
+                    <div class="film-detalies__raiting">
+                        <img src="/img/icons/imdb.png" alt="imbd">
+                        <span class="raiting__span raiting__span_big">9.2</span>
+                        <span class="raiting__span">/10</span>
+                    </div>
+                </div>
                 </div>
                 <!-- /.film -->
-                <a class="film-trailer" href="#">
+                <a data-fancybox="video-gallery"  data-src="https://youtu.be/UsnDPok1ZOU" class="film-trailer" href="#">
                     <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="50" fill="white"/>
                         <g clip-path="url(#clip0)">
@@ -71,17 +92,7 @@
             <!-- /.main -->
             
         <!-- /.main -->
-        <div class="film-detalies container">
-            <div class="film-detalies__time">
-                <img src="/img/icons/clock.svg" alt="icon: time">
-                <span class="time__span">240 мин.</span>
-            </div>
-            <div class="film-detalies__raiting">
-                <img src="/img/icons/imdb.png" alt="imbd">
-                <span class="raiting__span raiting__span_big">9.2</span>
-                <span class="raiting__span">/10</span>
-            </div>
-        </div>
+       
 
         <div class="session container">
             <div class="session__date">
@@ -139,7 +150,7 @@
     <!-- /.header -->
 
     <div class="scheme container">
-        <svg  class="scheme-svg" width="1170" height="600" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  class="scheme-svg"  viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="light" d="M128 115L201.04 48H968.96L1042 115H128Z" fill="url(#paint0_linear)"/>
             <line x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39" stroke-width="10"/>
             <path d="M130 158.5C130 158.526 130.001 158.551 130.003 158.577C130.096 159.791 130.537 161.596 131.588 163.128C132.666 164.699 134.409 166 137 166H159.5C159.524 166 159.548 165.999 159.571 165.997C160.899 165.903 162.851 165.373 164.496 164.072C166.181 162.738 167.5 160.622 167.5 157.5V148H165.5V157.5C165.5 159.978 164.486 161.529 163.254 162.503C161.996 163.499 160.469 163.921 159.463 164H137C135.191 164 134.018 163.134 133.237 161.997C132.44 160.835 132.08 159.413 132 158.46V148H130V158.5ZM156.5 135H140.5C137.186 135 134.5 137.686 134.5 141V154C134.5 157.314 137.186 160 140.5 160H156.5C159.814 160 162.5 157.314 162.5 154V141C162.5 137.686 159.814 135 156.5 135Z" />
@@ -359,6 +370,6 @@
 <!-- /.price -->
 
 
-    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
